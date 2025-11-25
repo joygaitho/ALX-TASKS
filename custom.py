@@ -14,7 +14,7 @@ def val_too_high():
             raise ValueTooHighError("This number is too high!")
         print(f"number is: {number}")
     except ValueTooHighError as e:
-        print(e)
+        print("Error!", e)
     except ValueError as e:
         print(e)
 val_too_high()
