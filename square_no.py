@@ -1,8 +1,8 @@
-def square_number(x):
+def square(x):
     """
     this is an intentional bug
     
     """
     #BUG: this should be x * x
     return x + x
-print(square_number(5))
+print(square(5))
