@@ -1,6 +1,8 @@
-class Shape:
+from abc import ABC, abstractmethod
+class Shape(ABC):
+    @abstractmethod 
     def calculate_area(self):
-        return 0
+        pass
     """ base method meant to be overriden """
 class Rectangle(Shape):
     def __init__(self, length, width):
@@ -9,7 +11,5 @@ class Rectangle(Shape):
     def calculate_area(self):
         return self.length * self.width
     """ overrides methods to compute rectangle area """
-shape = Shape()
-print("shape area is:", shape.calculate_area())
 rect = Rectangle(20, 15)
 print("area of rectangle is:", rect.calculate_area())
