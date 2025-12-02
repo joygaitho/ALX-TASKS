@@ -9,7 +9,8 @@ class Vehicle(ABC):
     def stop(self):
         pass
 class Car(Vehicle):
-    """ we are able to instantiate class Car because we have defined abstract methods go and stop """
+    """ we are able to instantiate class Car because we have defined abstract methods go and stop.
+     if we didn't do so there would be a TypeError: Can't instantiate abstract class Car without an implementation for abstract methods 'go', 'stop' """
     def go(self):
         print("you drive the car")
     def stop(self):
