@@ -5,7 +5,7 @@ class Book:
         self.pages = pages
     def __str__(self):
         return f"'{self.title}' by {self.author} ({self.pages}) pages"
-    def __repr__(self):
+    def __repr__(self): #  Defines the official string representation of an object.
         return f"Book({self.title}, {self.author}, {self.pages})"
 
 book1 = Book("1984", "George Orwell", 328)
