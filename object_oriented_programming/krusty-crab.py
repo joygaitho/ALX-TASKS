@@ -15,7 +15,7 @@ class Employee:
     @staticmethod
     def is_valid_position(position):
         valid_positions = ["Manager", "Cashier", "Cook", "Janitor"]
-        return position in valid_positions
+        return position in valid_positions # membership operator
 
 employee1 = Employee("Eugene Krabs", "Manager")
 employee2 = Employee("Squidward Tentacles", "Cashier")
