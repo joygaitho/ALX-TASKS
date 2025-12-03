@@ -59,4 +59,4 @@ print(f"the discount on {prod_2.name} is £{value_d:,.2f}")
 for item in Product.all:
     (print(item.name, item.price, item.quantity))
 print(repr(prod_1))
-print(repr(prod_2))
+print(repr(prod_2)) 
